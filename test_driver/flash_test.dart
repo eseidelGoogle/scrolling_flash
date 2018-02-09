@@ -25,11 +25,18 @@ void main() {
       // Find the scrollable user list
       SerializableFinder userList = find.byValueKey('user-list');
 
-      int iterations = 10;
-      double scrollSize = 10.0;
+      int iterations = 3;
       int spacingSize = 20; // has to be over 16?
-      int scrollNumber = 75;
-
+      // Seems to make the screen turn white and stay white:
+      // double scrollSize = 100.0;
+      // int scrollNumber = 7;
+      // also stays white:
+      // double scrollSize = 50.0;
+      // int scrollNumber = 14;
+      // does not stay white:
+      double scrollSize = 10.0;
+      int scrollNumber = 70;
+    
       for (int j = 0; j < iterations; j++) {
         for (int i = 0; i < scrollNumber; i++) {
           await driver.scroll(userList, 0.0, -1.0 * scrollSize,
