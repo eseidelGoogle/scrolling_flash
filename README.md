@@ -1,8 +1,7 @@
-# posse_flash
+```
+flutter drive --target=test_driver/flash.dart
+```
+Should reproduce on the device.
 
-A new Flutter project.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](http://flutter.io/).
+Tweak the test in
+`test_driver/flash_test.dart`
